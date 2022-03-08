@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Library;
 using NUnit.Framework;
 using PersonNS;
@@ -9,9 +10,11 @@ namespace Tests {
         [SetUp]
         public void Init() {
             gen = new Generator();
+            rand = new Random();
         }
 
         private Generator gen;
+        private Random rand;
 
         [Test]
         public void TestTooLow() {
@@ -77,14 +80,17 @@ namespace Tests {
         public void TestRunningTime(int arraySize) {
             // Arrange
             ComparisonCountedInt[] arr = (ComparisonCountedInt[]) gen.NextCCIArray(arraySize, arraySize);
-            ComparisonCountedInt testCCI = arr[3];
+            int i = rand.Next(arr.Length);
+            ComparisonCountedInt testCCI = arr[i];
             int maxSearch = 1 + ((int)Math.Ceiling(Math.Log(arraySize, 2.0)));
+            maxSearch += 2; // added search
 
             // Act
             int count = ComparisonCountedInt.CountComparisons(arr);
+            Search.Binary(arr, testCCI);
 
             // Assert
-            Assert.LessOrEqual(ComparisonCountedInt.CountComparisons(arr) - count, maxSearch+2);
+            Assert.LessOrEqual(ComparisonCountedInt.CountComparisons(arr) - count, maxSearch);
         }
 
         [Test]
@@ -95,13 +101,38 @@ namespace Tests {
         public void TestLinearIndexEqualsBinaryIndex(int arraySize) {
             // Arrange
             var arr = gen.NextArray(arraySize, arraySize);
-
+            int i = rand.Next(arr.Length);
             // Act
-            var binaryIndex = Search.Binary(arr, arr[7]);
-            var linearIndex = Search.Linear(arr, arr[7]);
+            var binaryIndex = Search.Binary(arr, arr[i]);
+            var linearIndex = Search.Linear(arr, arr[i]);
 
             // Assert
             Assert.AreEqual(binaryIndex, linearIndex);
+        }
+
+        // make this on average
+        [Test]
+        [TestCase(8)]
+        [TestCase(100)]
+        [TestCase(1000)]
+        [TestCase(10000)]
+        public void TestLinearVsBinary(int arraySize) {
+            // Arrange
+            ComparisonCountedInt[] arr = gen.NextCCIArray(arraySize, arraySize);
+            int i = rand.Next(arr.Length);
+            ComparisonCountedInt target = arr[i];
+
+            // Act
+            int preCount = ComparisonCountedInt.CountComparisons(arr);
+            Search.Binary(arr, target);
+            int binaryCount = ComparisonCountedInt.CountComparisons(arr);
+            Search.Linear(arr, target);
+            int linearCount = ComparisonCountedInt.CountComparisons(arr);
+            int finalBinaryCount = binaryCount - preCount;
+            int finalLinearCount = linearCount - binaryCount;
+
+            // Assert
+            Assert.LessOrEqual(finalBinaryCount, finalLinearCount);
         }
     }
 }

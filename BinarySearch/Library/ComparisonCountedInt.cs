@@ -17,7 +17,7 @@ namespace Library
         public static int CountComparisons(ComparisonCountedInt[] array) {
             int sum = 0;
             foreach (ComparisonCountedInt cci in array) {
-                System.Console.WriteLine(sum + " + " + cci.Compared);
+                //System.Console.WriteLine(sum + " + " + cci.Compared);
                 sum += cci.ComparisonCount;
             }
             return sum;
