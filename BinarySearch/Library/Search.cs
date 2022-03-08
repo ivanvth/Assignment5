@@ -23,6 +23,10 @@ namespace Library {
                 } else if (relation > 0) {
                     high = mid - 1;
                 } else {
+                    while (mid != 0 && array[mid].CompareTo(array[mid-1]) == 0)
+                    {
+                        mid -= 1;
+                    }
                     return mid;
                 }
             }

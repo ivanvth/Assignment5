@@ -67,6 +67,7 @@ namespace Tests {
             Assert.AreEqual(0, Search.Binary(arr, testPerson3));
         }
 
+        // Take into account binary search modifications to align with linear search
         [Test]
         [TestCase(4)]
         [TestCase(16)]
