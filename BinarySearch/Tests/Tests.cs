@@ -112,27 +112,34 @@ namespace Tests {
 
         // make this on average
         [Test]
-        [TestCase(8)]
+        [TestCase(16)]
         [TestCase(100)]
         [TestCase(1000)]
         [TestCase(10000)]
         public void TestLinearVsBinary(int arraySize) {
-            // Arrange
-            ComparisonCountedInt[] arr = gen.NextCCIArray(arraySize, arraySize);
-            int i = rand.Next(arr.Length);
-            ComparisonCountedInt target = arr[i];
+            int[] finalBinary = new int[100];
+            int[] finalLinear = new int[100];
+            for (int i=0; i<100; i++) {
+                // Arrange
+                ComparisonCountedInt[] arr = gen.NextCCIArray(arraySize, arraySize);
+                int index = rand.Next(arr.Length);
+                ComparisonCountedInt target = arr[index];
 
-            // Act
-            int preCount = ComparisonCountedInt.CountComparisons(arr);
-            Search.Binary(arr, target);
-            int binaryCount = ComparisonCountedInt.CountComparisons(arr);
-            Search.Linear(arr, target);
-            int linearCount = ComparisonCountedInt.CountComparisons(arr);
-            int finalBinaryCount = binaryCount - preCount;
-            int finalLinearCount = linearCount - binaryCount;
-
+                // Act
+                int preCount = ComparisonCountedInt.CountComparisons(arr);
+                Search.Binary(arr, target);
+                int binaryCount = ComparisonCountedInt.CountComparisons(arr);
+                Search.Linear(arr, target);
+                int linearCount = ComparisonCountedInt.CountComparisons(arr);
+                int finalBinaryCount = binaryCount - preCount;
+                int finalLinearCount = linearCount - binaryCount;
+                finalBinary[i] = finalBinaryCount;
+                finalLinear[i] = finalLinearCount;
+            }
+            int sumFinalBinary = finalBinary.Sum();
+            int sumFinalLinear = finalLinear.Sum();
             // Assert
-            Assert.LessOrEqual(finalBinaryCount, finalLinearCount);
+            Assert.LessOrEqual(sumFinalBinary, sumFinalLinear);
         }
     }
 }

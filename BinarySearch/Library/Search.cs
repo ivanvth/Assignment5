@@ -6,10 +6,12 @@ namespace Library {
             if (array.Length == 0) {
                 return -1;
             }
+
             if (target.CompareTo(array[0]) < 0 ||
                 target.CompareTo(array[array.Length-1]) > 0) {
                 return -1;
             }
+
             var low = 0;
             var high = array.Length - 1;
 
@@ -22,11 +24,9 @@ namespace Library {
                     low = mid + 1;
                 } else if (relation > 0) {
                     high = mid - 1;
+                } else if (mid != low) {
+                    high = mid;
                 } else {
-                    while (mid != 0 && array[mid].CompareTo(array[mid-1]) == 0)
-                    {
-                        mid -= 1;
-                    }
                     return mid;
                 }
             }

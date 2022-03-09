@@ -3802,11 +3802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
+      "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\ivt44\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\obj\\",
+      "outputPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -3831,11 +3831,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj": {
-              "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj"
+            "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj": {
+              "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj"
             },
-            "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
-              "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj"
+            "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
+              "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj"
             }
           }
         }
