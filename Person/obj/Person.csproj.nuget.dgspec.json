@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {}
+    "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
+    "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
+        "projectUniqueName": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
         "projectName": "Person",
-        "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
+        "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
         "packagesPath": "C:\\Users\\ivt44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\obj\\",
+        "outputPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

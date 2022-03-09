@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj": {}
+    "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj": {
+    "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj",
+        "projectUniqueName": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj",
+        "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj",
         "packagesPath": "C:\\Users\\ivt44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\obj\\",
+        "outputPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj": {
+    "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
+        "projectUniqueName": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
+        "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\ivt44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\obj\\",
+        "outputPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -98,11 +98,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj": {
-                "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj"
+              "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj": {
+                "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\BinarySearch\\Library\\Library.csproj"
               },
-              "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
-                "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj"
+              "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
+                "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj"
               }
             }
           }
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
+    "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
+        "projectUniqueName": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
         "projectName": "Person",
-        "projectPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
+        "projectPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\Person.csproj",
         "packagesPath": "C:\\Users\\ivt44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\obj\\",
+        "outputPath": "c:\\Users\\ivt44\\KU\\SU\\ass5\\Handout\\Person\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
